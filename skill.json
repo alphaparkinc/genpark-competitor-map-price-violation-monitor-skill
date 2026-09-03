@@ -1,0 +1,39 @@
+{
+  "name": "genpark-competitor-map-price-violation-monitor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time Minimum Advertised Price (MAP) policy violation monitor and unauthorized seller enforcement auditor.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-commerce",
+  "tags": [
+    "prisync",
+    "omnia-retail",
+    "map-violation",
+    "pricing-compliance",
+    "brand-protection"
+  ],
+  "inputs": {
+    "brand_sku": {
+      "type": "string"
+    },
+    "authorized_map_usd": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "monitoring_run_id": {
+      "type": "string"
+    },
+    "violations_detected": {
+      "type": "integer"
+    },
+    "action_recommended": {
+      "type": "string"
+    },
+    "evidence_screenshot_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
